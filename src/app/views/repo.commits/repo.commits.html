@@ -1,0 +1,9 @@
+<ul class="list-unstyled" data-ng-show="commits">
+  <li data-ng-repeat="commit in commits">{{commit.commit.author.name}} commited {{commit.commit.message}}</li>
+</ul>
+
+<p data-ng-show="commits.length === 0">No commits found.</p>
+
+<p data-ng-show="error">
+  We are having trouble loading the repository commmits. Please try again.
+</p>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" data-ng-app="github" id="ng-app">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="main.min.css" />
+        <title>Github</title>
+    </head>
+    <body>
+        <div data-ui-view></div>
+        <script type="text/javascript" src="main.min.js"></script>
+        <script>
+          (function() {
+            if (!window.location.hash) {
+              window.location.hash = '/';
+            }
+          })();
+        </script>
+    </body>
+</html>

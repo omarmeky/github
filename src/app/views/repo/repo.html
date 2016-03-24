@@ -1,0 +1,11 @@
+<p data-ng-show="details">
+  This is a <span data-ng-show="details.private">private</span><span data-ng-show="!details.private">public</span> repository owned by {{details.owner.login}}.
+</p>
+
+<p data-ng-show="error">
+  We are having trouble loading the repository details. Please try again.
+</p>
+
+<a data-ui-sref="repo.commits({full_name: full_name})">Show Commits</a>
+
+<div data-ui-view></div>

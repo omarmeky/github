@@ -1,0 +1,12 @@
+<form data-ng-submit="search()">
+  <input type="text" data-ng-model="searchTerm">
+  <button>Search</button>
+</form>
+
+<ul class="list-unstyled" data-ng-show="results">
+  <li data-ng-repeat="result in results"><a data-ui-sref="repo({full_name: result.full_name})">{{result.full_name}}</a></li>
+</ul>
+
+<p data-ng-show="results.length === 0">No matching repositories found.</p>
+
+<p data-ng-show="error">Something went wrong. Please try again.</p>
